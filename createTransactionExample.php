@@ -48,8 +48,8 @@ $transaction_details = array(
 
 // Populate customer's billing address
 $billing_address = array(
-    'first_name'   => "Wahyu",
-    'last_name'    => "Widodo",
+    'first_name'   => "Andri",
+    'last_name'    => "Safriyanto",
     'address'      => "Karet Belakang 15A, Setiabudi.",
     'city'         => "Jakarta",
     'postal_code'  => "51161",
@@ -70,8 +70,8 @@ $shipping_address = array(
 
 // Populate customer's info
 $customer_details = array(
-    'first_name'       => "Wahyu",
-    'last_name'        => "Widodo",
+    'first_name'       => "Andri",
+    'last_name'        => "Safriyanto",
     'email'            => "wahyusoft@yahoo.com",
     'phone'            => "081322311801",
     'billing_address'  => $billing_address,
@@ -92,7 +92,7 @@ $transaction_data = array(
 
 try {
   $url = BASE_URL.'charge';	
-  $response = remotePost($url,'VT-server-OOGHWK8qjuBxavFHX2ym4ZlK',json_encode($transaction_data)); 
+  $response = remotePost($url,'Ubah-dengan-server_key-mu',json_encode($transaction_data)); 
   echo "<pre>";print_r($response);
 } catch (Exception $e) {
   echo $e->getMessage();
